@@ -1,10 +1,15 @@
 
 
-source ~/.config/nvim/loadcoc.vim
+if !has('gui_vimr')
+  source ~/.config/nvim/loadcoc.vim
+endif
+
 source ~/.vimrc
 call plug#begin()
   Plug 'scrooloose/nerdtree'
+if !has('gui_vimr')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
+endif
   Plug 'fatih/vim-go'
   
   " discord
@@ -77,4 +82,4 @@ if has('gui_vimr')
   set guifont=Comic_Mono:h18 
 endif
 
-
+let g:loaded_python3_provider = 0
