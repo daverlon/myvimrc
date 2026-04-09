@@ -1,0 +1,9 @@
+[terminal.shell]
+program = "/bin/zsh"
+args = ["-l"]
+
+[font]
+size = 14.0
+
+[window]
+dimensions = { columns = 120, lines = 40 }
