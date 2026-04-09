@@ -4,6 +4,8 @@
 
 plugins=(git)
 
+eval "$(direnv hook zsh)"
+
 
 # User configuration
 
